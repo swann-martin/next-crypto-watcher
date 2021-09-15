@@ -1,0 +1,9 @@
+160128cdc8551bbb99cda19a8841cc5b4fddacda
+
+fetch("https://api.nomics.com/v1/currencies/ticker?key=160128cdc8551bbb99cda19a8841cc5b4fddacda&ids=BTC,ETH,ADA&interval=1d,30d,365d&convert=EUR")
+  .then(response => response.json())
+  .then(data => console.log(data))
+
+fetch("https://api.nomics.com/v1/currencies/ticker?key=160128cdc8551bbb99cda19a8841cc5b4fddacda&id=BTC&attibutes=id,name,logo_url,description,reddit_url")
+  .then(response => response.json())
+  .then(data => console.log(data))
